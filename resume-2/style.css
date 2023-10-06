@@ -51,6 +51,7 @@ span {
 .header {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .header-right {
@@ -150,6 +151,7 @@ span {
 .game {
     flex: 0 1 512px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .game > img {
@@ -158,4 +160,5 @@ span {
 
 .game > div {
     margin: 0px 20px;
+    flex: 1 1 256px;
 }

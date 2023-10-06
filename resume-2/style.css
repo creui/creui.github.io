@@ -1,148 +1,161 @@
-<!DOCTYPE html>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Resume</title>
-        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/P838UWs.png">
-        <link rel="stylesheet" href="style.css">
-    </head>
+body {
+    background-color: #fafafa;
+    color: #282828;
+    font-family: 'Inter';
+    margin: 26px 72px;
+}
 
-    <body>
-        <!-- header -->
+hr {
+    color: #ccc;
+    margin: 26px 0px;
+}
 
-        <div class="header">
-            <div class="header-left">
-                <p>He/Him</p>
-                <p>Dasmariñas, Cavite, Philippines</p>
-            </div>
-            <h1>Adrian G. Javier</h1>
-            <div class="header-right">
-                <p>09611487850</p>
-                <p>javier.adrian.kld@gmail.com</p>
-            </div>
-        </div>
+h1 {
+    font-weight: 900;
+    font-size: 53px;
+    padding: 0;
+    margin: 0 auto 0 0;
+}
 
-        <hr>
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+}
 
-        <!-- personal profile -->
+h3 {
+    font-size: 33px;
+    margin: 10px 0;
+}
 
-        <h2>Personal Profile</h2>
+p {
+    margin: 0;
+}
 
-        <div class="personal-profile">
-            <div>
-                <div class="personal-profile-left-col">
-                    <p>Age</p>
-                    <p>Birthdate</p>
-                    <p>Alias</p>
-                </div>
-                <div class="personal-profile-right-col">
-                    <p>18 years old</p>
-                    <p>April 21, 2005</p>
-                    <p>Creui</p>
-                </div>
-            </div>
-            <div>
-                <div class="personal-profile-left-col">
-                    <p>Github</p>
-                    <p>X</p>
-                    <p>YouTube</p>
-                </div>
-                <div class="personal-profile-right-col">
-                    <p><a href="https://github.com/creui" target="_blank">github.com/creui</a></p>
-                    <p><a href="https://x.com/ckureui" target="_blank">x.com/ckureui</a></p>
-                    <p><a href="https://youtube.com/@creui" target="_blank">youtube.com/@creui</a></p>
-                </div>
-            </div>
-        </div>
+a {
+    text-decoration: none;
+    color: #282828;
+}
 
-        <hr>
+span {
+    font-weight: 400;
+    opacity: 60%;
+}
 
-        <!-- educational background -->
+/* ---------- header ---------- */
 
-        <h2>Education</h2>
+.header {
+    display: flex;
+    align-items: flex-end;
+}
 
-        <div class="education">
-            <div class="education-left">
-                <p>Tertiary</p>
-                <br>
-                <br>
-                <p>Secondary</p>
-                <br>
-                <br>
-                <p>Elementary</p>
-            </div>
-            <div class="education-right">
-                <p>Bachelor of Science in Information Systems</p>
-                <p class="school">Kolehiyo ng Lungsod ng Dasmariñas</p>
-                <br>
-                <p>STEM Graduate <span>with honors</span></p>
-                <p class="school">Emilio Aguinaldo College-Cavite</p>
-                <br>
-                <p>Graduate <span>with high honors</span></p>
-                <p class="school">Grace Horizon Grade School</p>
-            </div>
-        </div>
+.header-right {
+    opacity: 60%;
+    margin-bottom: 10px;
+    text-align: right;
+}
 
-        <hr>
+.header-left {
+    opacity: 60%;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: auto;
+}
 
-        <!-- hobbies -->
+/* ----- personal profile ----- */
 
-        <h2>Hobbies</h2>
+.personal-profile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+    justify-content: space-around;
+}
 
-        <div class="hobbies">
-            <div class="hobbies-bullets">
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-            </div>
-            <div class="hobbies-contents">
-                <p>Casual and Competitive Computer Games</p>
-                <p>Watching a Movie or Series</p>
-                <p>Programming and alike</p>
-                <p>Reading</p>
-                <p>Design</p>
-            </div>
-        </div>
+.personal-profile > div {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-        <hr>
+.personal-profile-left-col {
+    text-align: right;
+    font-weight: 700;
+    margin: 0px 10px 0px 0px;
+    line-height: 200%;
+    margin-left: auto;
+}
 
-        <!-- favorites -->
+.personal-profile-right-col {
+    line-height: 200%;
+    margin-right: auto;
+}
 
-        <h2>My Favorite:</h2>
-        <h2>Games</h2>
+/* --------- education --------- */
 
-        <div class="favorites">
-            <div class="game">
-                <img src="https://i.imgur.com/xEqMMQP.png" alt="Hades">
-                <div>
-                    <h3><a href="https://store.steampowered.com/app/1145360/hades/" target="_blank">Hades</a></h3>
-                    <p>The only way I get interested in learning greek mythology is by playing this.</p>
-                </div>
-            </div>
-            <div class="game">
-                <img src="https://i.imgur.com/tIkWIEK.png" alt="Your Only Move is Hustle">
-                <div>
-                    <h3><a href="https://store.steampowered.com/app/2212330/Your_Only_Move_Is_HUSTLE/" target="_blank">YOMI Hustle</a></h3>
-                    <p>A very interesting take on fighting games. It’s a turn-based fighting game that let’s you choose actions whenever your character is ready.</p>
-                </div>
-            </div>
-            <div class="game">
-                <img src="https://i.imgur.com/SjDyz9H.png" alt="ULTRAKILL">
-                <div>
-                    <h3><a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" target="_blank">ULTRAKILL</a></h3>
-                    <p>A veeery fun retro-style FPS that can surprisingly run smoothly on my laptop.</p>
-                </div>
-            </div>
-            <div class="game">
-                <img src="https://i.imgur.com/wy6OAyl.png" alt="Minecraft">
-                <div>
-                    <h3><a href="https://www.minecraft.net/en-us" target="_blank">Minecraft</a></h3>
-                    <p>I’ve been playing this since I was a child. It’s a very relaxing game that pushes my creativity.</p>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+.education {
+    display: flex;
+    margin-bottom: 53px;
+}
+
+.education-left {
+    text-align: right;
+    font-weight: 700;
+    margin: 0px 10px 0px 0px;
+    margin-left: auto;
+}
+
+.education-right {
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.school {
+    font-style: italic;
+    opacity: 60%;
+    margin: 0;
+}
+
+/* ---------- hobbies ---------- */
+
+.hobbies {
+    margin-right: 20px;
+    display: flex;
+}
+
+.hobbies-bullets {
+    font-weight: 500;
+    font-size: 26.5px;
+    margin: 3px 5px 0px auto;
+    line-height: 1.18;
+}
+
+.hobbies-contents {
+    line-height: 220%;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+/* --------- favorites --------- */
+
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    justify-content: center;
+}
+
+.game {
+    flex: 0 1 512px;
+    display: flex;
+}
+
+.game > img {
+    height: 50%;
+}
+
+.game > div {
+    margin: 0px 20px;
+}
